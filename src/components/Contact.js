@@ -48,7 +48,7 @@ const Contact = () => {
 
         const { name, email, phone, message } = userData;
 
-        const res = await fetch("http://localhost:3030/contact", {
+        const res = await fetch("https://mernbackened.herokuapp.com//contact", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

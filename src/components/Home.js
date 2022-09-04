@@ -6,7 +6,7 @@ const Home = () => {
 
     const userHomePage = async () => {
         try {
-            const res = await fetch("http://localhost:3030/getdata", {
+            const res = await fetch("http://mernbackened.herokuapp.com/getdata", {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json"

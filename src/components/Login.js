@@ -13,7 +13,7 @@ const Login = () => {
 
     const loginUser = async (e) => {
         e.preventDefault();
-        const res = await fetch("http://localhost:3030/signin", {
+        const res = await fetch("http://mernbackened.herokuapp.com/signin", {
             method:"POST",
             headers:{
                 "Content-Type": "application/json"

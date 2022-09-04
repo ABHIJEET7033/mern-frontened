@@ -24,7 +24,7 @@ const Signup = () => {
 
         const { name, email, phone, work, password, cpassword } = user;
 
-        const res = await fetch("http://localhost:3030/register", {
+        const res = await fetch("http://mernbackened.herokuapp.com/register", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

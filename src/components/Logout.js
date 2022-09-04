@@ -9,7 +9,7 @@ const Logout = () => {
 
         
     useEffect(() => {
-        fetch('127.0.0.1:3030/logout', {
+        fetch('mernbackened.herokuapp.com/logout', {
             method: "GET",
             headers: {
                 Accept: "appllication/json",
