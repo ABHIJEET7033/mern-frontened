@@ -12,7 +12,7 @@ const About = () => {
 
     const callAboutPage = async () => {
         try {
-            const res = await fetch("http://localhost:3030/about", {
+            const res = await fetch("http://mernbackened.herokuapp.com/about", {
                 method: "GET",
                 headers: {
                     Accept: "application/json",
