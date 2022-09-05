@@ -10,8 +10,6 @@ const Contact = () => {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json",
-                    'Access-Control-Allow-Origin':'*',
-                    'Access-Control-Allow-Methods':'POST,PATCH,OPTIONS'
                 },
                 credentials:'include'
             });
@@ -54,8 +52,7 @@ const Contact = () => {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
-                'Access-Control-Allow-Origin':'*',
-                'Access-Control-Allow-Methods':'POST,PATCH,OPTIONS'
+                
             },
             body: JSON.stringify({
                 name, email, phone, message
