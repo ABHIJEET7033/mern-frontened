@@ -13,7 +13,7 @@ const Login = () => {
 
     const loginUser = async (e) => {
         e.preventDefault();
-        const res = await fetch("https://mernbackened.herokuapp.com/signin", {
+        const res = await fetch("https://mernbackened.herokuapp.com/signin.json", {
             method:"POST",
             headers:{
                 "Content-Type": "application/json"

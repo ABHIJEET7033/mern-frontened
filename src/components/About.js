@@ -12,7 +12,7 @@ const About = () => {
 
     const callAboutPage = async () => {
         try {
-            const res = await fetch("https://mernbackened.herokuapp.com/about", {
+            const res = await fetch("https://mernbackened.herokuapp.com/about.json", {
                 method: "GET",
                 headers: {
                     Accept: "application/json",
