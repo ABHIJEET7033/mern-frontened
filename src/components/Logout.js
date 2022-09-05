@@ -9,7 +9,7 @@ const Logout = () => {
 
         
     useEffect(() => {
-        fetch('https://mernbackened.herokuapp.com/logout.json', {
+        fetch('https://mernbackened.herokuapp.com/logout', {
             method: "GET",
             headers: {
                 Accept: "appllication/json",

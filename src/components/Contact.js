@@ -6,7 +6,7 @@ const Contact = () => {
 
     const userContact = async () => {
         try {
-            const res = await fetch("http://mernbackened.herokuapp.com/getdata.json", {
+            const res = await fetch("http://mernbackened.herokuapp.com/getdata", {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json",
@@ -50,12 +50,12 @@ const Contact = () => {
 
         const { name, email, phone, message } = userData;
 
-        const res = await fetch("https://mernbackened.herokuapp.com/contact.json", {
+        const res = await fetch("https://mernbackened.herokuapp.com/contact", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
                 'Access-Control-Allow-Origin':'*',
-                    'Access-Control-Allow-Methods':'POST,PATCH,OPTIONS'
+                'Access-Control-Allow-Methods':'POST,PATCH,OPTIONS'
             },
             body: JSON.stringify({
                 name, email, phone, message
