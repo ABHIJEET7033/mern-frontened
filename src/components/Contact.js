@@ -6,7 +6,7 @@ const Contact = () => {
 
     const userContact = async () => {
         try {
-            const res = await fetch("http://mernbackened.herokuapp.com/getdata", {
+            const res = await fetch("mernbackened.herokuapp.com/getdata", {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json",
