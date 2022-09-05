@@ -9,7 +9,9 @@ const Contact = () => {
             const res = await fetch("http://mernbackened.herokuapp.com/getdata.json", {
                 method: "GET",
                 headers: {
-                    "Content-Type": "application/json"
+                    "Content-Type": "application/json",
+                    'Access-Control-Allow-Origin':'*',
+                    'Access-Control-Allow-Methods':'POST,PATCH,OPTIONS'
                 },
                 credentials:'include'
             });
@@ -51,7 +53,9 @@ const Contact = () => {
         const res = await fetch("https://mernbackened.herokuapp.com/contact.json", {
             method: "POST",
             headers: {
-                "Content-Type": "application/json"
+                "Content-Type": "application/json",
+                'Access-Control-Allow-Origin':'*',
+                    'Access-Control-Allow-Methods':'POST,PATCH,OPTIONS'
             },
             body: JSON.stringify({
                 name, email, phone, message

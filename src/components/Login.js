@@ -16,7 +16,9 @@ const Login = () => {
         const res = await fetch("https://mernbackened.herokuapp.com/signin.json", {
             method:"POST",
             headers:{
-                "Content-Type": "application/json"
+                "Content-Type": "application/json",
+                'Access-Control-Allow-Origin':'*',
+                    'Access-Control-Allow-Methods':'POST,PATCH,OPTIONS'
             },
             body: JSON.stringify({
                 email,

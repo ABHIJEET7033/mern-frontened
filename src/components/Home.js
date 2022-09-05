@@ -9,7 +9,9 @@ const Home = () => {
             const res = await fetch("https://mernbackened.herokuapp.com/getdata.json", {
                 method: "GET",
                 headers: {
-                    "Content-Type": "application/json"
+                    "Content-Type": "application/json",
+                    'Access-Control-Allow-Origin':'*',
+                    'Access-Control-Allow-Methods':'POST,PATCH,OPTIONS'
                 },
                 credentials:'include'
             });
