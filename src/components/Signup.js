@@ -29,7 +29,7 @@ const Signup = () => {
             headers: {
                 "Content-Type": "application/json",
                 'Access-Control-Allow-Origin':'*',
-                    'Access-Control-Allow-Methods':'POST,PATCH,OPTIONS'
+                'Access-Control-Allow-Methods':'POST,PATCH,OPTIONS'
             },
             body: JSON.stringify({
                 name, email, phone, work, password, cpassword
