@@ -1,7 +1,7 @@
 import React, {useEffect, useState}  from 'react'
 import "bootstrap/dist/js/bootstrap.min.js";
 import aboutpic from "../images/aboutpic.png";
-import thapapic from "../images/thapapic.png";
+import abhipic from "../images/aboutpic.png";
 
 import { useNavigate } from "react-router-dom";
 
@@ -47,7 +47,7 @@ const About = () => {
                     <div className="row">
                         <div className="col-md-4">
                             <div className="profile-img">
-                            <img src={userData.name === "Vinod Bahadur Thapa" ? thapapic : aboutpic} alt="thapa" />
+                            <img src={userData.name === "Abhijeet Kumar" ? abhipic : aboutpic} alt="Abhi" />
                             </div>
                         </div>
 
