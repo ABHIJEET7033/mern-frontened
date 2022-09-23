@@ -16,7 +16,7 @@ const Logout = () => {
                 "Content-Type": "application/json",
                 
             },
-            credentials: "same-origin"
+            credentials: "include"
         }).then((res) => {
             dispatch({ type: 'USER', payload: false });
             navigate('/login', { replace: true });

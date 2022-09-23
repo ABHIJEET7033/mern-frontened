@@ -52,12 +52,14 @@ const Contact = () => {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
-                
             },
+
+            credentials:'include',
+            
             body: JSON.stringify({
                 name, email, phone, message
             }),
-            credentials:'include',
+            
         });
 
         const data = await res.json();
