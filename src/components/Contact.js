@@ -30,7 +30,7 @@ const Contact = () => {
 
     useEffect(() => {
         userContact();
-    }, []);
+    });
 
     // we are storing data in states 
 
