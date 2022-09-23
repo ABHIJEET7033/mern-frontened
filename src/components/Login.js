@@ -28,7 +28,7 @@ const Login = () => {
         const data=await res.json();
         console.log(data)
         console.log(res.status);
-        if (res.status === 200) {
+        if (res.status === 201) {
             dispatch({type:"USER",payload:true});
             window.alert("Login Successfull");
             navigate("/");
